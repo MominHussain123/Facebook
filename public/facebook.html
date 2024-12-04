@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="./style/facebook.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo_icon">
+                <a href="./facebook.html"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="nav_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search facebook" />
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="icon_box active">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="icon_box">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="icon_box">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="icon_box">
+                <a href="#"><i class="fa-solid fa-users"></i></a>
+            </div>
+            <div class="icon_box">
+                <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+            </div>
+        </nav>
+
+        <div class="icons">
+            <div class="i_div"><i class="bx bxs-grid"></i></div>
+            <div class="i_div"><i class="fa-brands fa-facebook-messenger"></i></div>
+            <div class="i_div"><i class="fa-solid fa-bell"></i></div>
+            <div class="i_div profileimg">
+                <img src="./images/./profile.jpg" id="profileImage" alt="" onclick="openprofile()" />
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="left"></div>
+
+        <!-- <div class="postImage">
+            <input type="file">
+        </div> -->
+
+        <div class="center">
+            <div class="container">
+                <div class="wrapper-container">
+                    <div class="previousbtn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+
+                    <div class="content">
+                        <div class="wrapper">
+                            <div class="wrapper-box wrapper-box1">
+                                <img src="./images/main image.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box2">
+                                <img src="./images/profile.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box3">
+                                <img src="./images/main image.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box4">
+                                <img src="./images/profile.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box5">
+                                <img src="./images/profile.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box6">
+                                <img src="./images/main image.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box7">
+                                <img src="./images/profile.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box8">
+                                <img src="./images/main image.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box9">
+                                <img src="./images/profile.jpg" alt="" />
+                            </div>
+                            <div class="wrapper-box wrapper-box10">
+                                <img src="./images/profile.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="nextbtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="UserPost" id="UserPost">
+                    <div class="postContainer" id="postContainer">
+                        <div class="post-box">
+                            <div class="top-pro">
+                                <img src="./images/profile.jpg" alt="profile Image" class="ProfileImage"
+                                    id="profileImage" onclick="openprofile()" />
+                                <h4 class="setfullName" id="UserName">Momin hussain</h4>
+                            </div>
+
+                            <img src="./images/profile.jpg" alt="" />
+
+                            <div class="bottom-pro">
+                                <div class="likediv">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <p class="name"></p>
+                                </div>
+                                <div class="link">
+                                    <button class="like">
+                                        <i class="fa-solid fa-thumbs-up"></i>Like
+                                    </button>
+                                    <button class="comment">
+                                        <i class="fa-solid fa-comment"></i>Comment
+                                    </button>
+                                </div>
+                                <div class="comment">
+                                    <img src="./images/profile.jpg" alt="profileImage" class="ProfileImage"
+                                        id="profileImage" onclick="openprofile()" />
+                                    <div class="input-box">
+                                        <input type="text" placeholder="Comment" />
+                                        <button><i class="fa-regular fa-paper-plane"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./javascript/facebook.js"></script>
+</body>
+
+</html>
